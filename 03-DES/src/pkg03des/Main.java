@@ -26,7 +26,7 @@ public class Main {
         }
         
         //Paso 1: definir el algoritmo y su clave.
-        System.out.println("1.- Generar las claves DES");
+        System.out.println("1-Generar las claves DES");
         //Para generar las claves usamos la clase KeyGenerator.
         KeyGenerator generadorDES = KeyGenerator.getInstance("DES");
         
@@ -61,7 +61,7 @@ public class Main {
         Cipher cifrador = Cipher.getInstance("DES/ECB/PKCS5Padding");
         
         //Vamos a crear el menu para cifrar y descifrar.
-        System.out.println("2.- Cifrar un fichero con DES: " + args[0]
+        System.out.println("2-Cifrar un fichero con DES: " + args[0]
                 + " dejamos el resultado en: " + args[0] + ".cifrado");
         
         //Tenemos que cargar el archivo y ejecutar el cifrado.
@@ -102,7 +102,7 @@ public class Main {
         //Ahora el descifrado.
         
         //Vamos a crear el menu para cifrar y descifrar.
-        System.out.println("3.- Descifrar un fichero con DES: " + args[0]
+        System.out.println("3-Descifrar un fichero con DES: " + args[0]
                 + " dejamos el resultado en: " + args[0] + " descifrado");
         
         //Tenemos que cargar el archivo y ejecutar el cifrado.
@@ -147,6 +147,6 @@ public class Main {
             System.out.println("Ejemplo de un programa "
                     + "que sirve para cifrar y descifrar con DES");
             System.out.println("Favor de ingresar un archivo de "
-                    + "texto plano, si no funciona osea .txt");
+                    + "texto plano");
     }
 }
